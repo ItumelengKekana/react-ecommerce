@@ -129,16 +129,6 @@ const AddressForm = ({ checkoutToken, next }) => {
 									setShippingCountry(e.target.value)
 								}
 							>
-								{/* {Object.entries(shippingCountries)
-									.map(([code, name]) => ({
-										id: code,
-										label: name,
-									}))
-									.map((item) => (
-										<MenuItem key={item.id} value={item.id}>
-											{item.label}
-										</MenuItem>
-									))} */}
 								{countries.map((country) => (
 									<MenuItem
 										key={country.id}
@@ -162,16 +152,6 @@ const AddressForm = ({ checkoutToken, next }) => {
 									setShippingSubdivision(e.target.value)
 								}
 							>
-								{/* {Object.entries(shippingSubdivisions)
-									.map(([code, name]) => ({
-										id: code,
-										label: name,
-									}))
-									.map((item) => (
-										<MenuItem key={item.id} value={item.id}>
-											{item.label}
-										</MenuItem>
-									))} */}
 								{subdivisions.map((subdivision) => (
 									<MenuItem
 										key={subdivision.id}
@@ -191,16 +171,6 @@ const AddressForm = ({ checkoutToken, next }) => {
 									setShippingOption(e.target.value)
 								}
 							>
-								{/* {shippingOptions
-									.map((sO) => ({
-										id: sO.id,
-										label: `${sO.description} - (${sO.price.formatted_with_symbol})`,
-									}))
-									.map((item) => (
-										<MenuItem key={item.id} value={item.id}>
-											{item.label}
-										</MenuItem>
-									))} */}
 								{options.map((option) => (
 									<MenuItem key={option.id} value={option.id}>
 										{option.label}
